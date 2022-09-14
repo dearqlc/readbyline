@@ -6,13 +6,13 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Random;
 
-public class readByLine {
+public class ReadByLine {
 
     private static final List<String> jinJuList = new ArrayList<>();
 
     public static void main(String[] args) {
         // 读取resources下的jinju.txt
-        InputStream inputStream = readByLine.class.getClassLoader().getResourceAsStream("jinju.txt");
+        InputStream inputStream = ReadByLine.class.getClassLoader().getResourceAsStream("jinju.txt");
         try (BufferedReader br = new BufferedReader(new InputStreamReader(Objects.requireNonNull(inputStream)))) {
             StringBuilder str = new StringBuilder();
             String temp;
