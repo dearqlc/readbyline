@@ -1,3 +1,5 @@
+package com.example.readbyline.test;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -9,7 +11,6 @@ import java.util.Objects;
 /**
  * @Author QLC
  * @Date 2022/9/14 10:08
- * Content:
  */
 public class PrintNumber {
 
