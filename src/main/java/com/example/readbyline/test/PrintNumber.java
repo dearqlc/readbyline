@@ -16,7 +16,7 @@ public class PrintNumber {
 
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();
-        InputStream inputStream = PrintNumber.class.getClassLoader().getResourceAsStream("sx120.txt");
+        InputStream inputStream = PrintNumber.class.getClassLoader().getResourceAsStream("txt/sx120.txt");
         try (BufferedReader br = new BufferedReader(new InputStreamReader(Objects.requireNonNull(inputStream)))) {
             String temp;
             while ((temp = br.readLine()) != null) {

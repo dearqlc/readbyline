@@ -10,15 +10,17 @@ import java.util.Objects;
  * @Date 2022/12/8 10:48
  */
 public class FormatRoleId {
+
     public static void main(String[] args) {
-        InputStream inputStream = PrintNumber.class.getClassLoader().getResourceAsStream("queqiao.txt");
+        InputStream inputStream = PrintNumber.class.getClassLoader().getResourceAsStream("txt/agreementNo.txt");
         try (BufferedReader br = new BufferedReader(new InputStreamReader(Objects.requireNonNull(inputStream)))) {
             String temp;
             while ((temp = br.readLine()) != null) {
-                System.out.print('\"' + temp + '\"' + ',');
+                System.out.print('\'' + temp + '\'' + ',');
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
 }

@@ -16,7 +16,7 @@ public class ReadByLine {
     private static final List<String> JIN_JU_LIST = new ArrayList<>();
 
     public static void main(String[] args) {
-        InputStream inputStream = ReadByLine.class.getClassLoader().getResourceAsStream("jinju.txt");
+        InputStream inputStream = ReadByLine.class.getClassLoader().getResourceAsStream("txt/jinju.txt");
         try (BufferedReader br = new BufferedReader(new InputStreamReader(Objects.requireNonNull(inputStream)))) {
             StringBuilder str = new StringBuilder();
             String temp;
