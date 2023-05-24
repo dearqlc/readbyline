@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author QLC
  */
 @SpringBootApplication
-public class ApplicationStartup {
+public class ApplicationStartUp {
 
     public static void main(String[] args) {
-        SpringApplication.run(ApplicationStartup.class, args);
+        SpringApplication.run(ApplicationStartUp.class, args);
     }
 
 }
